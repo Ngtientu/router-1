@@ -1,0 +1,132 @@
+/*  Home */
+.nav-home{
+    margin: 10px 100px 10px;
+   display: block;
+   background-color: rgb(54, 235, 235);
+   padding-bottom: 10px;
+}
+.home-title {
+   text-align: center;
+    margin-top: 20px;
+    color: red;
+}
+.nav-home h1{
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 5px 5px 5px rgba(148, 148, 236, 0.786);
+    text-transform: uppercase;
+}
+.link {
+    margin: 10px;
+    font-size: 20px;
+    border: 1px solid rgb(92, 1, 55);
+    border-radius: 6px;
+    padding: 2px 10px 2px;
+    background-color: rgb(252, 255, 154);
+    color: rgb(0, 0, 255);
+}
+.link-footer{
+display: block;
+margin: auto;
+background-color: rgb(10, 115, 53);
+color: white;
+text-align: center;
+margin: 10px;
+margin-bottom: 100px;
+}
+.about-end{
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+    color: red;
+}
+.link:hover{
+    text-decoration: none;
+    color: red;
+    font-size: 1.2rem;
+    background-color: rgb(252, 255, 154);
+
+}
+/* About */
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.about-container{
+    margin: 10px 100px 10px;
+    display: block;
+}
+.about-container .about-nav{
+    display: block;
+    background-color: rgb(54, 235, 235);
+    padding-bottom: 10px;
+}
+.about-container .about-title{
+  font-size: 30px;
+  margin: 10px;
+  text-shadow: 5px 5px 5px rgba(234, 33, 33, 0.507);
+  color: red;
+}
+.about-container .about-img{
+    display: block;
+    margin: auto;
+    width: 70%;
+    margin-top: 15px;
+    border: 1px solid rgb(4, 4, 122);
+    padding: 10px;
+}
+.courses-container{
+    display: block;
+    margin: auto;
+    width: 70%;
+    margin-top: 15px;
+    border: 1px solid rgb(4, 4, 122);
+    padding: 10px;
+}
+.courses-container h2{
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.courses-container .courses-img{
+    display: block;
+    margin: auto;
+    width: 70%;
+
+}
+.courses-container p{
+    text-align: center;
+    margin: 0px;
+}
+
+.food-container{
+    margin: 10px 100px 10px;
+    display: block;
+}
+ .food-nav{
+   background-color: rgb(54, 235, 235);
+   padding-bottom: 10px;
+}
+
+.food-container .food-table{
+    display: block;
+    
+}
+table{
+    margin: auto;
+    background-color: antiquewhite;
+}
+.food-title{
+    color: red;
+}
+
+/* ERROR */
+.error-container{
+    display: block;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    div.example {
+      display: none;
+    }
+  }

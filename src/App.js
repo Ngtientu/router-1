@@ -1,68 +1,40 @@
-import { ChakraProvider, theme, Text, Heading, Flex, CardFooter } from "@chakra-ui/react";
-import KanbanBoard from "./components/KanbanBoard";
-
+import React from "react";
+import CourseItem from "./components/CourseItem";
+import courses from "./components/courses";
+import { Route, Switch } from "react-router-dom";
+//component
+import Home from "./components/Router/Home";
+import About from "./components/Router/About";
+import Food from "./components/Router/Food.js";
+import SeaFood from "./components/Router/SeaFood";
+import Error from "./components/Router/Error";
+//css
+import style from "./css/style.css";
 
 function App() {
   return (
-    <ChakraProvider theme={theme}>
-      <div
-        style={{
-          minHeight : "85vh",
-          
-        }}
-      >
-      <div style={{
-        margin :"5vh 0",
-        justifyContent
-        : "center",
-        alignItems: "center",
-        display: "flex",
-        height: "10vh",
+    <>
+      <Switch className="nav-bar">
+        <Route path="/" component={Home} exact />
+        <Route path="/about" component={About} />
+        <Route path="/food" component={Food} />
+        <Route path="/seafood" component={SeaFood} />
+        <Route component={Error} />
+      </Switch>
+    </>
+    // <div className="wrapper">
+    //   {/* {courses.map((course) => (
+    //     <CourseItem
+    //       key={course.id}
+    //       title={course.title}
+    //       description={course.description}
+    //       studentsCount={course.students_count}
+    //       image={course.thumbnail_cdn}
+    //     />
+    //   ))} */}
 
-      }}
-      >
-        
-      <h1>
-        <span>always be</span>
-        <div className="message">
-          <div className="word1">Agile</div>
-          <div className="word2">with</div>
-          <div className="word3">AgileEx</div>
-        </div>
-      </h1>
-
-      </div>
-      <KanbanBoard />
-      </div>
-      <footer
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          height: "10vh",
-          backgroundColor: "#e2e8f0",
-          bottom
-          : "0",
-
-        }}
-      >
-        <Text fontSize="sm" color="gray.600">
-          Made with
-          <span role="img" aria-label="love">
-            ❤️
-          </span>
-          by
-          <a
-            href="https://github.com/abderox"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {" Abderox"}
-          </a>
-
-        </Text>
-      </footer>
-    </ChakraProvider>
+    //   {/* <button onClick={() => console.log(Math.random())}>Click Me!</button> */}
+    // </div>
   );
 }
 
