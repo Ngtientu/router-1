@@ -10,6 +10,8 @@ import SeaFood from "./components/Router/SeaFood";
 import Error from "./components/Router/Error";
 //css
 import style from "./css/style.css";
+//component
+
 
 function App() {
   return (
@@ -22,19 +24,6 @@ function App() {
         <Route component={Error} />
       </Switch>
     </>
-    // <div className="wrapper">
-    //   {/* {courses.map((course) => (
-    //     <CourseItem
-    //       key={course.id}
-    //       title={course.title}
-    //       description={course.description}
-    //       studentsCount={course.students_count}
-    //       image={course.thumbnail_cdn}
-    //     />
-    //   ))} */}
-
-    //   {/* <button onClick={() => console.log(Math.random())}>Click Me!</button> */}
-    // </div>
   );
 }
 
